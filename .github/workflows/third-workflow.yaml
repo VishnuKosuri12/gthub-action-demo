@@ -1,9 +1,9 @@
 name: third manual run workflow
 
 on:
-  - workflow_dispatch:
-  - schedule:
-      - cron: '0 20 * * 6'  # Runs sat 8pm ist
+  workflow_dispatch:
+  schedule:
+    - cron: '0 20 * * 6'  # Runs sat 8pm ist
 
 # you can declare env variables in 3 levels: workflow, job, step
 env:
