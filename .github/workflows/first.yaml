@@ -1,0 +1,25 @@
+name: first workflow
+
+on:
+  - push 
+  # - pull_request
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Say Hello to first workflow
+        run: echo "Hello, World! from Akhilesh Bootcamp"
+
+      - name: multi line script
+        run: |
+         echo "This is line 1"
+         echo "This is line 2"
+         echo "This is line 3"
+
+         
+
+
